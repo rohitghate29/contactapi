@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/testdatabase
-    username: postgres
-    password: admin
+    url: postgres://contactapidatabase_user:lZIFxFgXKPSVbsyjhyDYY4RCS0k0iTnB@dpg-cphck0m3e1ms73d5a30g-a.oregon-postgres.render.com/contactapidatabase
+    username: contactapidatabase_user
+    password: lZIFxFgXKPSVbsyjhyDYY4RCS0k0iTnB
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     generate-ddl: true
@@ -23,9 +23,44 @@ mvc:
   async:
     request-timeout: 3600000
 server:
-  port: 8080
+  port: 5432
   error:
     path: /user/error
     whitelabel:
       enabled: false
+
+
+
+
+
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/testdatabase
+#    username: postgres
+#    password: admin
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    generate-ddl: true
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        globally_quoted_identifiers: true
+#        format_sql: true
+#servlet:
+#  multipart:
+#    enabled: true
+#    max-file-size: 1000MB
+#    max-request-size: 1000MB
+#mvc:
+#  throw-exception-if-no-handler-found: true
+#  async:
+#    request-timeout: 3600000
+#server:
+#  port: 8080
+#  error:
+#    path: /user/error
+#    whitelabel:
+#      enabled: false
 
