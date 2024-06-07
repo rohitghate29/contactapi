@@ -14,6 +14,9 @@ COPY src ./src
 COPY .mvn ./.mvn
 COPY mvnw .
 
+# Ensure the Maven wrapper script has execute permissions
+RUN chmod +x ./mvnw
+
 # Install Maven
 RUN apk add --no-cache maven
 
