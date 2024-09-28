@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: postgres://contactapidatabase_user:lZIFxFgXKPSVbsyjhyDYY4RCS0k0iTnB@dpg-cphck0m3e1ms73d5a30g-a.oregon-postgres.render.com/contactapidatabase
-    username: contactapidatabase_user
-    password: lZIFxFgXKPSVbsyjhyDYY4RCS0k0iTnB
+    url: jdbc:postgresql://postgres:AHKCKeQyBLgOGjFLUCXbGkJOeVitDCEn@postgres.railway.internal:5432/railway
+    username: postgres
+    password: AHKCKeQyBLgOGjFLUCXbGkJOeVitDCEn
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     generate-ddl: true
